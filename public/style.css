@@ -1,0 +1,57 @@
+body {
+  background-color: #FFFAFA; 
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+  }
+
+  #board-title {
+    text-align: center;
+    font-family: "Luminari", cursive;
+    font-size: 50px;
+  }
+  
+  .box {
+    padding: 5px;
+    margin: 15spx;
+    align-items: center;
+  }
+
+  #bingo-container {
+    width: 50%;
+    display: flex;
+    text-align: center;
+    background-color:rgb(149, 119, 161);
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  } 
+
+  .cell {
+  background-color: #f1f1f1;
+  width: 125px;
+  height: 125px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  }
+  
+  .cell.clicked {
+    background-color: rgb(38, 211, 81);
+  }
+
+  #previous-numbers {
+    background-color: rgb(147, 143, 184);
+    display: grid;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+ 
+  
+  

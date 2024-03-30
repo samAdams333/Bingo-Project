@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box" id = "board-title">
+            <h1>Bingo!</h1>
+        </div>
+
+        <div class="box" id="player-name">
+            <div id="enter/show-name">
+                <form id="playerName">
+                    <label for="name">Enter your player name to generate your card:</label><br>
+                        <input style="display: block; margin: 0 auto;" type="text" id ="playerNameInput" name="name"><br>
+                        <input style="display: block; margin: 0 auto;" type ="submit" value="Enter name">
+                </form> 
+            </div>
+        </div>
+        
+        
+        <div class="box" id="bingo-container">
+            <div id="Bingo-board"></div>
+        </div>
+
+        <div class="box" id="appendBox"></div>
+
+        <div class="box" id="call-number">
+            <button type="button" id="generate-number">Call New Number</button> 
+        </div>
+
+        <div class="box" id = "previous-numbers-title">
+            <h1>Previously Called Numbers</h1>
+        </div>
+
+        <div class="box" id = "previous-numbers"></div>
+    </div>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script> const socket = io();
+         console.log('Socket connected:', socket);
+    </script>
+</body>
+</html>
